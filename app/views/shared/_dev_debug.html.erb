@@ -1,0 +1,4 @@
+<% if Rails.env == "development" %>
+  <%= javascript_include_tag "livecss" %>
+  <script>livecss.watchAll();</script>
+<% end %>
