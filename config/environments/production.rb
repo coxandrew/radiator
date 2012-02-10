@@ -15,7 +15,8 @@ Pulse::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  # Had to set this to 'true' to work in production. See: http://stackoverflow.com/questions/9153435/rails-3-2-precompiled-assets-causes-internal-server-error-500-and-log-miss-cach
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
