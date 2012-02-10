@@ -1,0 +1,31 @@
+/* =theme
+------------------------------------------------------------------ */
+body {
+  background: #000;
+  color: #fff;
+}
+#main {
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+  background: #252525;
+}
+footer p {
+  margin: 0;
+  padding: 5px;
+  color: #888;
+  font-style: italic;
+}
+
+/* =widgets
+------------------------------------------------------------------ */
+.widget {
+  background: #252525;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.widget p {
+  margin: 0;
+  padding: 5px 10px;
+}
