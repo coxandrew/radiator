@@ -2,6 +2,10 @@
 
 The Pulse is a flexible, pluggable status dashboard built on top of [Rails](http://rubyonrails.org) and [apotomo](http://apotomo.de). It's designed for ease of use and beauty!
 
+## Getting started
+
+Copy `config/config.yml.example` to `config/config.yml` and fill in your own configuration details.
+
 ## Create a new widget
 
 Start by creating a Velocity widget:

@@ -1,7 +1,7 @@
 require 'pivotal-tracker'
 
 class VelocityWidget < Apotomo::Widget
-  PivotalTracker::Client.token = CONNECTORS_CONFIG["pivotal"]["api_key"]
+  PivotalTracker::Client.token = APP_CONFIG["pivotal"]["api_key"]
 
   def display
     puts "++ PROJECT_ID: #{project_id}"
@@ -11,6 +11,6 @@ class VelocityWidget < Apotomo::Widget
   end
 
   def project_id
-    CONNECTORS_CONFIG["pivotal"]["projects"]["firefly"]["id"]
+    APP_CONFIG["pivotal"]["projects"]["firefly"]["id"]
   end
 end
