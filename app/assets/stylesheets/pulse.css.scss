@@ -8,6 +8,7 @@ body {
   margin-top: 10px;
 }
 footer {
+  margin-top: 10px;
   text-align: center;
   background: #252525;
 }
@@ -23,9 +24,16 @@ footer p {
 .widget {
   background: #252525;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
-.widget p {
+.widget .inside {
   margin: 0;
   padding: 5px 10px;
+}
+.widget h2 {
+  margin: 5px 0;
+  text-align: center;
+}
+#widget_velocity .velocity {
+  font-size: 300%;
+  text-align: center;
 }
