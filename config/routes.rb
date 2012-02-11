@@ -1,4 +1,4 @@
-Pulse::Application.routes.draw do
+Radiator::Application.routes.draw do
   get "dashboard/index"
 
   root :to => "dashboard#index"

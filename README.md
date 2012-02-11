@@ -1,6 +1,6 @@
-## Welcome to The Pulse!
+## Welcome to Radiator!
 
-The Pulse is a flexible, pluggable status dashboard built on top of [Rails](http://rubyonrails.org) and [apotomo](http://apotomo.de). It's designed for ease of use and beauty!
+Radiator is a flexible, pluggable status dashboard built on top of [Rails](http://rubyonrails.org) and [apotomo](http://apotomo.de). It's designed for ease of use and beauty!
 
 ## Getting started
 

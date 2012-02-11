@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Pulse::Application.load_tasks
+Radiator::Application.load_tasks
