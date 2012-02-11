@@ -1,5 +1,19 @@
+/* =colors
+------------------------------------------------------------------ */
+$purple:    #b50e58;
+$widget_bg: #252525;
+
 /* =theme
 ------------------------------------------------------------------ */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #fff;
+}
+a:hover {
+  background: $purple;
+}
 body {
   background: #000;
   color: #fff;
@@ -10,19 +24,19 @@ body {
 footer {
   margin-top: 10px;
   text-align: center;
-  background: #252525;
 }
 footer p {
   margin: 0;
   padding: 5px;
-  color: #888;
+  color: #555;
+  font-size: 80%;
   font-style: italic;
 }
 
 /* =widgets
 ------------------------------------------------------------------ */
 .widget {
-  background: #252525;
+  background: $widget_bg;
   margin-top: 10px;
 }
 .widget .inside {
