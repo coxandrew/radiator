@@ -1,8 +1,14 @@
-<div id="widget_velocity" class="grid_4 widget">
+<div id="velocity">
   <div class="inside">
     <h2>Velocity</h2>
-    <div class="velocity">
-      <%= @velocity %>
-    </div>
+
+    <% if @velocity %>
+      <div class="velocity">
+        <%= @velocity %>
+      </div>
+    <% else %>
+      <div class="loading">Loading ...</div>
+      <script>$.ajax('<%= url_for_event(:load) %>');</script>
+    <% end %>
   </div>
 </div>

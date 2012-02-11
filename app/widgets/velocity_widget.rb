@@ -1,13 +1,17 @@
 require 'pivotal-tracker'
 
 class VelocityWidget < Apotomo::Widget
+  responds_to_event :load, :with => :display_ajax
+
   PivotalTracker::Client.token = APP_CONFIG["pivotal"]["api_key"]
 
   def display
-    puts "++ PROJECT_ID: #{project_id}"
-    firefly = PivotalTracker::Project.find(project_id)
-    @velocity = firefly.current_velocity
     render
+  end
+
+  def display_ajax
+    @velocity = PivotalTracker::Project.find(project_id).current_velocity
+    replace :view => :display
   end
 
   def project_id

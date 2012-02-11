@@ -47,7 +47,17 @@ footer p {
   margin: 5px 0;
   text-align: center;
 }
-#widget_velocity .velocity {
+#velocity {
+  min-height: 100px;
+}
+#velocity .velocity {
   font-size: 300%;
   text-align: center;
+}
+.loading {
+  margin: 10px auto;
+  text-indent: -9999px;
+  background: image-url("ajax-loader.gif") no-repeat 50% 50%;
+  height: 20px;
+  width: 20px;
 }
