@@ -10,7 +10,7 @@ Copy `config/config.yml.example` to `config/config.yml` and fill in your own con
 
 Start by creating a Velocity widget:
 
-    ∴ rails generate apotomo:widget velocity
+    $ rails generate apotomo:widget velocity
         invoke  erb
         invoke  test_unit
         create    test/widgets/velocity_widget_test.rb

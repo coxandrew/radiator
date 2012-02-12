@@ -1,0 +1,18 @@
+<div id="epics">
+  <div class="inside">
+    <h2>Current Epics</h2>
+
+    <div class="epics">
+      <% @epics.each do |epic| %>
+        <div class="epic clearfix">
+          <label>
+            <%= "#{epic.name}" %>
+          </label>
+          <div class="progress">
+            <div class="completed" style="width: <%= epic.percent_complete %>%"></div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
