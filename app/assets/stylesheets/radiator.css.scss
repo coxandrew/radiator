@@ -82,17 +82,21 @@ footer p {
 #epics h2 {
   margin-bottom: 15px;
 }
-.epic {
-  clear: both;
-  margin-bottom: 8px;
+.epics {
+  width: 100%;
 }
-.epic label {
-  float: left;
-  width: 25%;
+.epic th {
+  font-weight: normal;
+  text-align: left;
+  padding-right: 5px;
+  white-space: nowrap;
+  width: 33%;
+}
+.epic td {
+  width: 66%;
 }
 .epic .progress {
-  float: left;
-  width: 70%;
+  width: 98%;
   border: 1px solid #888;
   padding: 1px;
   background: #555;
