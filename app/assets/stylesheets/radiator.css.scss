@@ -53,6 +53,10 @@ footer p {
 .widget .value {
   color: $widget_value;
 }
+#velocity h2,
+#world_clock h2 {
+  text-align: center
+}
 #motd {
   text-transform: uppercase;
   color: #acacac;
@@ -61,7 +65,6 @@ footer p {
 #velocity {
   min-height: 100px;
 }
-#velocity h2 { text-align: center }
 #velocity .velocity {
   font-size: 300%;
   text-align: center;
@@ -97,4 +100,22 @@ footer p {
 .epic .progress .completed {
   height: 16px;
   background: $widget_value;
+}
+
+/* =clock
+------------------------------------------------------------------ */
+#world_clock .inside {
+  padding-bottom: 16px;
+}
+#world_clock h3 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 100%;
+  font-weight: normal;
+}
+#world_clock .time {
+  text-align: center;
+  color: $widget_value;
+  font-family: monospace;
+  font-size: 120%;
 }

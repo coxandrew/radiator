@@ -3,6 +3,7 @@ class DashboardController < ApplicationController
     root << widget(:motd)
     root << widget(:epics)
     root << widget(:velocity)
+    root << widget(:world_clock)
   end
 
   def index
