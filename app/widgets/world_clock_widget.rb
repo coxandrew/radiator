@@ -14,7 +14,7 @@ class WorldClockWidget < Apotomo::Widget
     clock_cities.each_pair do |city, offset|
       @cities << OpenStruct.new(
         :name => city.gsub("_", " ").gsub(/\b\w/){$&.upcase},
-        :time => Time.now.localtime("+08:00")
+        :time => Time.now.localtime(offset)
       )
     end
   end
