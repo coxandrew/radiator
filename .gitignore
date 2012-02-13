@@ -17,3 +17,4 @@
 # Project-specific
 /notes
 radiator.yml
+/test/fixtures

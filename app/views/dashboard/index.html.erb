@@ -2,12 +2,22 @@
   <%= render_widget :motd %>
 </div>
 
-<div class="grid_12 widget">
-  <%= render_widget :epics %>
-</div>
+<div class="grid_18">
+  <div class="grid_12 widget alpha">
+    <%= render_widget :epics %>
+  </div>
 
-<div class="grid_6 widget">
-  <%= render_widget :velocity %>
+  <div class="grid_6 widget omega">
+    <%= render_widget :velocity %>
+  </div>
+
+  <div class="grid_12 widget alpha">
+    <%= render_widget :calendar %>
+  </div>
+
+  <div class="grid_6 widget omega">
+    Class of Service
+  </div>
 </div>
 
 <div class="grid_6 widget">

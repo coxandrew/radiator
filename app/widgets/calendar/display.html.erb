@@ -1,0 +1,14 @@
+<div id="calendar">
+  <div class="inside">
+    <h2>Calendar</h2>
+
+    <div class="events">
+      <% @events.each do |event| %>
+        <div class="event">
+          <div class="date"><%= event.date.to_s(:short) %></div>
+          <div class="name"><%= event.name %></div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

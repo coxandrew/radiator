@@ -4,6 +4,7 @@ class DashboardController < ApplicationController
     root << widget(:epics)
     root << widget(:velocity)
     root << widget(:world_clock)
+    root << widget(:calendar)
   end
 
   def index

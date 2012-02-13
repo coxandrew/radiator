@@ -53,6 +53,8 @@ footer p {
 .widget .value {
   color: $widget_value;
 }
+#velocity,
+#epics { min-height: 130px; }
 #velocity h2,
 #world_clock h2 {
   text-align: center
@@ -61,10 +63,7 @@ footer p {
   text-transform: uppercase;
   color: #acacac;
 }
-#motd strong { color: #fff; }
-#velocity {
-  min-height: 100px;
-}
+#motd strong { color: #fff }
 #velocity .velocity {
   font-size: 300%;
   text-align: center;
@@ -122,4 +121,26 @@ footer p {
   color: $widget_value;
   font-family: monospace;
   font-size: 120%;
+}
+
+/* =calendar
+------------------------------------------------------------------ */
+#calendar h2 {
+  margin-bottom: 15px;
+}
+.event {
+  background: #333;
+  font-size: 80%;
+  padding: 4px 12px 3px;
+  margin: 2px 0;
+}
+.event .date {
+  float: left;
+  width: 6em;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #888;
+}
+.event .name {
+  margin-left: 6em;
 }
